@@ -1,0 +1,65 @@
+body {
+
+
+    background-color: black;
+    color: rgb(255, 205, 1);
+    font-family: "Helvetica", Arial;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+
+.titre {
+    text-decoration: underline;
+
+}
+
+.gras {
+    font-weight: bolder;
+
+}
+
+li.Arthur {
+    margin-top: 10px;
+}
+
+/*Lien animé changement couleur*/
+
+a {
+    color: rgb(255, 205, 1);
+    text-decoration: none;
+    transition: color .3s;
+
+}
+
+a:hover {
+    color: cyan;
+
+}
+
+/*Bouton haut de page*/
+
+.button {
+    background-color: forestgreen;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    font-size: 16px;
+    left: 1130px;
+    transition: transform .2s;
+
+}
+
+
+.button:hover {
+
+    transform: scale(1.1);
+}

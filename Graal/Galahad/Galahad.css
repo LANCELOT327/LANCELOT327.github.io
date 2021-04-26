@@ -1,0 +1,115 @@
+body {
+    background-color: darkred;
+    color: white;
+
+
+}
+
+/*Style texte*/
+
+p {
+
+    text-align: justify;
+    font-family: "Courier New", Courier, Arial, cursive, serif;
+    font-weight: bold;
+
+}
+
+h1,
+.sommaire {
+    text-align: center;
+
+}
+
+.titre {
+
+    text-decoration: underline;
+}
+
+
+/*image Galaad animé*/
+
+img.anime {
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    border-radius: 15px;
+    transition: transform .5s;
+}
+
+
+img.anime:hover {
+
+    transform: scale(1.1);
+
+}
+
+/*image flottante*/
+img.image-droite {
+
+    float: right;
+    margin-left: 10px;
+    margin-top: 5px;
+    border: solid;
+    border-radius: 15px;
+    position: relative;
+    bottom: 20px;
+}
+
+
+img.image-gauche {
+
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    border: solid;
+    border-radius: 15px;
+}
+
+
+
+
+/*Lien animé changement couleur*/
+
+a {
+    color: white;
+    text-decoration: none;
+    transition: color .3s;
+
+}
+
+
+
+
+a:hover {
+    color: yellowgreen;
+
+}
+
+/*Bouton haut de page*/
+
+.button {
+    background-color: forestgreen;
+    border-radius: 20px;
+    color: white;
+    font-weight: bolder;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    left: 1130px;
+    margin-bottom: 15px;
+    transition: transform .2s;
+}
+
+.button:hover {
+
+    border-radius: 20px;
+    transform: scale(1.1);
+    color: white;
+
+}

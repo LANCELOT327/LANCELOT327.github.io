@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="QCM.css" />
+    <title>QCM</title>
+
+    <a href="../../Accueil/accueil.html">
+      <img class="animation" src="../../Images/accueil.png" alt="logo_accueil" />
+    </a>
+  </head>
+
+  <body>
+    <h1>Quiz</h1>
+
+    <form>
+      <p>Question 1 : Le HTML sert à ... ?</p>
+      <br />
+
+      <input name="q1" type="radio" />changer la couleur du texte<br />
+      <input name="q1" type="radio" />créer des interactions avec l'utilisateur<br />
+      <input name="q1" type="radio" />structurer les différents éléments d'une page WEB<br />
+      <input name="q1" type="radio" />insérer une image en arrière-plan<br />
+      <p>Question 2 : Quelle langage permet de modifier l'apparence d'un site ?</p>
+      <br />
+
+      <input name="q2" type="radio" />Le Javascript<br />
+      <input name="q2" type="radio" />Le CSS<br />
+      <input name="q2" type="radio" />Le Python<br />
+      <input name="q2" type="radio" />Le HTML<br />
+
+      <p>Question 3 : La balise HTML "&lt;p&gt;...&lt;/p&gt;" permet ...</p>
+      <br />
+
+      <input name="q3" type="radio" />de changer la police d'écriture.<br />
+      <input name="q3" type="radio" />d'afficher une photographie<br />
+      <input name="q3" type="radio" />de modifier la position d'un élément<br />
+      <input name="q3" type="radio" />d'afficher un paragraphe <br />
+
+      <p>Question 4 : Quel balise doit-on utiliser pour associer une page CSS à un fichier HTML ?</p>
+      <br />
+
+      <input name="q4" type="radio" />link<br />
+      <input name="q4" type="radio" />meta<br />
+      <input name="q4" type="radio" />head<br />
+      <input name="q4" type="radio" />a:hover<br />
+
+      <p>Question 5 : Quelle langage permet de rendre notre page WEB dynamique ?</p>
+      <br />
+
+      <input name="q5" type="radio" />Le CSS<br />
+      <input name="q5" type="radio" />Le PHP<br />
+      <input name="q5" type="radio" /> Le Javascript<br />
+      <input name="q5" type="radio" />Le langage assembleur<br />
+
+      <br />
+      <input class="button" type="button" value="Afficher le score" onclick="affichage_score();" />
+
+      <a class="button-correction" href="Correction.html" target="_blank">Correction</a>
+    </form>
+
+    <script type="text/javascript">
+      function affichage_score() {
+        var points = 0;
+        var rep1 = document.getElementsByName('q1');
+        var rep2 = document.getElementsByName('q2');
+        var rep3 = document.getElementsByName('q3');
+        var rep4 = document.getElementsByName('q4');
+        var rep5 = document.getElementsByName('q5');
+        var repondu1 = false;
+        var repondu2 = false;
+        var repondu3 = false;
+        var repondu4 = false;
+        var repondu5 = false;
+
+        if (rep1[0].checked || rep1[1].checked || rep1[2].checked || rep1[3].checked) {
+          repondu1 = true;
+        }
+        if (rep2[0].checked || rep2[1].checked || rep2[2].checked || rep2[3].checked) {
+          repondu2 = true;
+        }
+        if (rep3[0].checked || rep3[1].checked || rep3[2].checked || rep3[3].checked) {
+          repondu3 = true;
+        }
+        if (rep4[0].checked || rep4[1].checked || rep4[2].checked || rep4[3].checked) {
+          repondu4 = true;
+        }
+        if (rep5[0].checked || rep5[1].checked || rep5[2].checked || rep5[3].checked) {
+          repondu5 = true;
+        }
+
+        if (repondu1 && repondu2 && repondu3 && repondu4 && repondu5) {
+          if (rep1[2].checked) {
+            points = points + 1;
+          }
+          if (rep2[1].checked) {
+            points = points + 1;
+          }
+          if (rep3[3].checked) {
+            points = points + 1;
+          }
+          if (rep4[0].checked) {
+            points = points + 1;
+          }
+          if (rep5[2].checked) {
+            points = points + 1;
+          }
+
+          alert('Votre score est de ' + points + ' points sur 5');
+        } else {
+          alert("Vous n'avez pas repondu à toutes les questions !");
+        }
+      }
+    </script>
+  </body>
+</html>

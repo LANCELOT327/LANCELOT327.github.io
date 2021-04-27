@@ -1,0 +1,75 @@
+body {
+  background-color: darkred;
+  color: white;
+}
+
+p {
+  text-align: justify;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: lime;
+}
+h2 > a:hover {
+  color: goldenrod;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+.italique {
+  font-style: italic;
+}
+
+.grand_titre {
+  text-align: center;
+}
+
+.titres {
+  text-decoration: underline;
+}
+
+img.animation:hover {
+  transform: scale(1.1) rotate(-10deg);
+}
+
+img.animation {
+  transition: transform 0.5s;
+}
+
+img.flottant-gauche {
+  float: left;
+  margin-right: 25px;
+}
+
+/*Bouton haut de page*/
+
+.button {
+  background-color: forestgreen;
+  border-radius: 20px;
+  color: white;
+  font-weight: bolder;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  left: 1050px;
+  bottom: 5px;
+  transition: transform 0.2s;
+}
+
+.button:hover {
+  border-radius: 20px;
+  transform: scale(1.1);
+  color: white;
+}

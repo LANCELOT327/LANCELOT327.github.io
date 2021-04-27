@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="cours.css" />
+    <title>Cours Javascript</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="../Accueil/accueil.html">
+        <img class="animation" id="haut_page" src="../Images/accueil.png" alt="logo_accueil" />
+      </a>
+
+      <img src="../Images/Logo/logo_JS2.png" alt="logo_javascript" class="logo_js" />
+      <h1 class="grand_titre">Cours Javascript</h1>
+    </header>
+    <br />
+    <p>
+      Maintenant que nous savons créer des pages web avec HTML et les mettre en forme avec CSS, il s’agit maintenant de pouvoir interagir avec les
+      interventions de l’utilisateur. Pour passer au web dynamique, d’autres langages sont nécessaires dont JAVASCRIPT fait partie.
+    </p>
+
+    <h2 class="titres">1. Fonctionnement de Javascript :</h2>
+
+    <p>
+      Pour intégrer du code javascript à un fichier HTML, il suffit de l’encapsuler entre les balises
+      <span class="gras">&lt;script&gt;...&lt;/script&gt;</span>. Cette balise peut être positionnée à n’importe quel endroit de la page HTML mais il
+      est d’usage de placer le code javascript juste avant la balise <span class="gras">&lt;/body&gt;</span>.
+    </p>
+
+    <p>
+      Il de tradition de commencer l’apprentissage d’un langage en faisant afficher la phrase "hello world". Nous allons suivre ici cette tradition.
+      Le code minimal à saisir est :
+    </p>
+    <img src="../Images/Captures/JS/hello_world.png" alt="script-hello_world" />
+
+    <p>
+      On retiendra que chaque instruction Javascript doit être suivie d’un point-virgule. L’instruction <span class="italique">alert</span> permet
+      d’afficher un texte, saisi entre 2 guillemets, dans une boîte de dialogue. Enregistrer et tester le code ci- dessus.
+    </p>
+
+    <h2 class="titres">2. Variables</h2>
+
+    <p>
+      Pour programmer en javascript, tout commence par l’utilisation de variables, chose la plus importante en informatique. Pour déclarer une
+      variable on utilise le mot-clé <span class="italique">var</span>. Par exemple, pour déclarer une variable <span class="italique">a</span> et
+      l’initialiser à 0, on saisit :
+    </p>
+
+    <img src="../Images/Captures/JS/variable.png" alt="sript-variable" />
+
+    <h3 class="titres">Nombres et opérations</h3>
+    <p>
+      Javascript sait gérer plusieurs sortes de nombres (entiers, décimaux, …). Par défaut ils sont regroupés dans le type number. Pour faire des
+      calculs sur 2 variables n1 et n2 de ce type, on utilise les opérateurs courants de la façon suivante :
+    </p>
+
+    <table>
+      <tr>
+        <td class="gold">Opération</td>
+        <td class="gold">Symbole</td>
+        <td class="gold">Exemple</td>
+      </tr>
+      <tr>
+        <td>addition</td>
+        <td>+</td>
+        <td>var n = n1 + n2 ;</td>
+      </tr>
+      <tr>
+        <td>soustraction</td>
+        <td>-</td>
+        <td>var n = n1 - n2 ;</td>
+      </tr>
+      <tr>
+        <td>multiplication</td>
+        <td>*</td>
+        <td>var n = n1 * n2 ;</td>
+      </tr>
+      <tr>
+        <td>division</td>
+        <td>/</td>
+        <td>var n = n1 / n2 ;</td>
+      </tr>
+      <tr>
+        <td>
+          reste <br />
+          (modulo)
+        </td>
+        <td>%</td>
+        <td>var n = n1 % n2 ;</td>
+      </tr>
+      <tr>
+        <td>puissance</td>
+        <td>Math.pow(nombre,exposant)</td>
+        <td>var n = Math.pow(n1,3) ;</td>
+      </tr>
+      <tr>
+        <td>racine carrée</td>
+        <td>Math.sqrt(nombre)</td>
+        <td>var n = Math.sqrt(n1) ;</td>
+      </tr>
+    </table>
+
+    <h3 class="titres">Tableaux</h3>
+
+    <p>
+      Un tableau permet de stocker de nombreuses informations, de façon indexée. Par exemple, pour stocker le tableau suivant dans une variable (que
+      l’on peut nommer tableau).
+    </p>
+
+    <table>
+      <tr>
+        <td>12</td>
+        <td>7</td>
+        <td>33</td>
+        <td>2</td>
+        <td>4</td>
+      </tr>
+    </table>
+
+    <p>On utilise le code :</p>
+    <img src="../Images/Captures/JS/tableau.png" alt="script-tableau" />
+
+    <p>
+      ATTENTION : le tableau est alors indexé de 0 à 4. Ce qui signifie que la variable tableau[0] contient la valeur 12, la variable tableau[1]
+      contient la valeur 7, …, la variable tableau[4] contient la valeur 4.
+    </p>
+
+    <p>On peut aussi créer un tableau de 5 cases vides avec le code :</p>
+    <img src="../Images/Captures/JS/tableau-vide.png" alt="script-tableau_vide" />
+    <footer>
+      <a class="button" href="#haut_page">Haut de Page</a>
+    </footer>
+  </body>
+</html>

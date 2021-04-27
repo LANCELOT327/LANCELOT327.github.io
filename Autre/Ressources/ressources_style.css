@@ -1,0 +1,90 @@
+body {
+  background-color: darkred;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+p {
+  text-align: justify;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+.italique {
+  font-style: italic;
+}
+
+.grand_titre {
+  text-align: center;
+}
+
+.titres {
+  text-decoration: underline;
+}
+
+table {
+  border-width: 2px;
+  border-style: solid;
+  width: 100%;
+  border-color: white;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  padding: 25px;
+  width: 25%;
+}
+td.gold {
+  color: goldenrod;
+  font-weight: bold;
+}
+td.justifié {
+  text-align: justify;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: lime;
+}
+
+img.animation:hover {
+  transform: scale(1.1) rotate(-10deg);
+}
+
+img.animation {
+  transition: transform 0.5s;
+}
+
+/*Bouton haut de page*/
+
+.button {
+  background-color: forestgreen;
+  border-radius: 20px;
+  color: white;
+  font-weight: bolder;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  left: 700px;
+  bottom: 5px;
+  transition: transform 0.2s;
+}
+
+.button:hover {
+  border-radius: 20px;
+  transform: scale(1.1);
+  color: white;
+}

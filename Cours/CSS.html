@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="cours.css" />
+    <title>Cours CSS</title>
+
+    <a href="../Accueil/accueil.html">
+      <img class="animation" id="haut_page" src="../Images/accueil.png" alt="logo_accueil" />
+    </a>
+  </head>
+
+  <body>
+    <img class="logo_css" src="../Images/Logo/CSS3_logo2.png" alt="logo_CSS" />
+    <h1 class="grand_titre">Cours CSS</h1>
+    <br />
+    <br />
+    <p>
+      HTML5 ne permet pas de gérer autre chose que la structure de la page et les éléments qui la composent. Pour gérer l’esthétique de notre site, il
+      faut utiliser un autre langage, complémentaire : le <span class="gras">CSS</span> (Cascading Style Sheets).
+    </p>
+
+    <h2 class="titres">1. Articulation des langages HTML et CSS :</h2>
+
+    <p>
+      Pour intégrer un fichier <span class="italique">.css</span> à une page web <span class="italique">.html</span>, on utilise la balise orpheline
+      <span class="gras">&lt;link /&gt;</span> qui dispose de 3 attributs :
+    </p>
+
+    <ul>
+      <li><span class="gras">rel="stylecheet"</span> pour expliciter qu’il s’agit d’une feuille de style.</li>
+      <li><span class="gras">type="css"</span> qui donne le type de feuille de style (css ici).</li>
+      <li><span class="gras">href</span>, comme pour les liens, qui indique le nom et l’emplacement du fichier .css.</li>
+    </ul>
+
+    <p>Saisir le code suivant dans un nouveau fichier nommé "accueil.html".</p>
+    <img src="../Images/Captures/CSS/DOCTYPE_html.png" alt="doctype_html" />
+
+    <p>Ouvrir un nouveau fichier dans un éditeur de texte. Saisir le code suivant :</p>
+
+    <img src="../Images/Captures/CSS/Color blue.png" alt="paragraphe-color-blue" />
+
+    <p>
+      Enregistrer ce nouveau fichier dans le même dossier que "<span class="italique">accueil.html</span>" en le nommant "<span class="italique"
+        >style.css</span
+      >". Puis ouvrir "<span class="italique">accueil.html</span>" dans le navigateur. On constate que le texte compris entre les balises
+      <span class="gras">&lt;p&gt;</span> et <span class="gras">&lt;/p&gt;</span> est en bleu. Voilà à quoi sert le CSS ...
+    </p>
+
+    <h2 class="titres">2. Formater du texte</h2>
+
+    <p>
+      Pour revenir au code précédent, on a appliqué la propriété color. Par défaut cette couleur est noire. On peut spécifier cette couleur à l’aide
+      d’un code hexadécimal par exemple. C’est une succession de 6 chiffres ou lettres (de a à f) précédée d’un #. Les 2 premiers caractères donnent
+      la proportion de rouge dans la couleur, les 2 suivants la proportion de vert et les 2 derniers la proportion de bleu. On peut récupérer ces
+      codes sur le site <a href="http://www.code-couleur.com" target="blank">http://www.code-couleur.com</a> par exemple.
+    </p>
+
+    <p>Modifier la couleur du paragraphe précédent, les autres propriétés pour formater un texte sont :</p>
+
+    <table>
+      <tr>
+        <td class="gold">Type</td>
+        <td class="gold">Propriété</td>
+        <td class="gold">Valeurs Possibles</td>
+      </tr>
+      <tr>
+        <td>Taille</td>
+        <td>font-size</td>
+        <td>taille (en pixels)</td>
+      </tr>
+      <tr>
+        <td>Épaisseur</td>
+        <td>font-weight</td>
+        <td>bold (gras) ou normal</td>
+      </tr>
+      <tr>
+        <td>Style</td>
+        <td>font-style</td>
+        <td>italic ou normal</td>
+      </tr>
+      <tr>
+        <td>Police</td>
+        <td>font-family</td>
+        <td>
+          serif <br />sans-serif <br />monospace <br />
+          cursive <br />fantasy
+        </td>
+      </tr>
+      <tr>
+        <td>Alignement</td>
+        <td>text-align</td>
+        <td>
+          left <br />
+          right<br />
+          center <br />
+          justify
+        </td>
+      </tr>
+    </table>
+
+    <p>
+      Pour les cellules d’un tableau, il est possible de spécifier l’alignement avec la propriété vertical-align qui peut prendre comme valeurs :
+      <span class="gras">baseline</span> (ligne de base du texte), <span class="gras">top</span> (en haut), <span class="gras">baseline</span> (en
+      bas), <span class="gras">middle</span> (au milieu).
+    </p>
+
+    <p>
+      Modifier le fichier <span class="italique">style.css</span> précédent afin que le titre qui peut être « ma première page avec du style »,
+      encapsulé dans les balises <span class="gras"> &lt;h1&gt; &lt;/h1&gt;</span> soit centré, en rouge, en gras, de taille 30 pixels, avec la police
+      fantasy. Le paragraphe doit être justifié, en gris, de taille 20 pixels, avec la police Cursive.
+    </p>
+
+    <h2 class="titres">3. Modifier l'apparence d'éléments</h2>
+
+    <p>
+      Il est possible de modifier l’apparence d’un élément de la page ou de toute la page. On peut spécifier par exemple une couleur ou une image de
+      fond. Pour modifier la couleur de fond de toute la page, on utilise la propriété <span class="gras">background-color</span> et on lui attribue
+      une couleur comme dans le paragraphe précédent. Dans le fichier <span class="italique">style.css</span> on a alors :
+    </p>
+
+    <img src="../Images/Captures/CSS/background-color.png" alt="background-color-css" />
+
+    <p>pour obtenir un joli fond bleu …</p>
+    <p>
+      On peut aussi insérer une image en fond de page avec la propriété <span class="gras">background-image</span>. Il faut ensuite spécifier
+      l’emplacement et le nom de l’image à l’aide de la valeur <span class="gras">url</span>.
+    </p>
+
+    <p>
+      Ainsi si on veut que l’image du logo HTML5 <a href="../Images/Logo/logoHTML5.png" download target="blank">(téléchargeable ici)</a> soit le fond
+      d’écran de la page, on saisit :
+    </p>
+
+    <img src="../Images/Captures/CSS/background-image.png" alt="background-image-css" />
+
+    <p>
+      Si l’image est d’une taille moins grande que celle de la page, elle se répète automatiquement. Pour éviter cela il faut spécifier
+      <span class="gras">no-repeat</span>
+      comme suit :
+    </p>
+    <img src="../Images/Captures/CSS/background-repeat.png" alt="background-repeat:no-repeat-css" />
+
+    <p>
+      Pour fixer l’image de fond si on utilise les "ascenseurs", il faut le spécifier avec
+      <span class="gras">background-attachment : fixed ;</span>. Enfin on peut préciser la position de l’image sur l’écran à l’aide de la propriété
+      <span class="gras">background-position</span> dont la valeur peut être <span class="gras">top</span>, <span class="gras">bottom</span>,
+      <span class="gras">left</span>, <span class="gras">right</span> ou <span class="gras">center</span>. Ce qu’on vient de découvrir peut également
+      s’appliquer aux autres éléments de la page (h1, h2, …, p, header, footer, etc …).
+    </p>
+
+    <h2 class="titres">4. Bordures d'un tableau</h2>
+    <p>
+      Dans la partie HTML nous avons vu comment organiser les cellules d’un tableau. Nous allons voir ici comment lui dessiner des bordures. On peut
+      reprendre le code html suivant dans un fichier "<span class="italique">tableau.html</span>" :
+    </p>
+    <img src="../Images/Captures/CSS/tableau.png" alt="tableau-html" />
+
+    <p>Dans le fichier "<span class="italique">style.css</span>", on peut saisir le code suivant :</p>
+    <img src="../Images/Captures/CSS/tableau-css.png" alt="tableau-style-css" />
+
+    <p>
+      Les propriétés <span class="gras">border-width</span>, <span class="gras">border-style</span> et
+      <span class="gras">border-color</span> permettent respectivement de spécifier l’épaisseur des bordures (en pixels), le type de trait (<span
+        class="gras"
+        >solid</span
+      >
+      pour plein, <span class="gras">dotted</span> pour pointillés, <span class="gras">dached</span> pour pointillés,
+      <span class="gras">double</span> pour un trait double), et leur couleur. On constate que seules les bordures extérieures du tableau sont
+      apparentes. On ajoute alors les lignes suivantes :
+    </p>
+    <img src="../Images/Captures/CSS/tableau-css-in.png" alt="tableau-css-bordure_interieure" />
+
+    <p>On constate maintenant que les bordures sont doublées … Pour les fusionner on ajoute la ligne suivante :</p>
+
+    <img src="../Images/Captures/CSS/border-collapse.png" alt="border-collapse-css" />
+    <p>dans le style de "<span class="italique">table</span>" afin de fusionner toutes les bordures.</p>
+
+    <h2 class="titres">5. Modifier la position d'éléments</h2>
+
+    <p>Le dernier type d’opérations que nous permet le CSS, c’est de pouvoir modifier la position des éléments sur la page.</p>
+
+    <p>
+      CSS ne peut modifier que la position des éléments de type bloc comme par exemple
+      <span class="gras">&lt;h&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;table&gt;, &lt;header&gt;, &lt;footer&gt;, &lt;div&gt;.</span>
+    </p>
+    <p>
+      Les éléments comme les liens, les images, les <span class="gras">&lt;input&gt;</span> ou encore les <span class="gras">&lt;span&gt;</span> ne
+      sont pas des blocs. Ils sont dits en-ligne.
+    </p>
+
+    <p>
+      Heureusement il est possible de faire passer un élément de type bloc en élément de type en-ligne et vice- versa. Pour cela on utilise la
+      propriété <span class="gras">display</span> à laquelle on attribue les valeurs bloc, <span class="gras">inline</span> ou même
+      <span class="gras">none</span> (qui permet de ne pas afficher l’élément …).
+    </p>
+
+    <p>Par défaut les éléments de type bloc sont disposés les uns au-dessous des autres dans l’ordre dans lequel ils ont été créés.</p>
+
+    <p>
+      Les éléments de type en-ligne sont eux positionnés les uns à la suite des autres, en ligne, de gauche à droite, dans l’ordre dans lequel ils ont
+      été créés.
+    </p>
+
+    <p>
+      Pour positionner un bloc sur la page, on utilise la propriété position qui peut prendre les valeurs <span class="gras">fixed</span> (ce qui
+      signifie que le bloc reste à sa place même quand on utilise les "ascenseurs") ou <span class="gras">relative</span>, Dans ce cas, on peut
+      spécifier la position du bloc par rapport aux blocs qui l’entourent à l’aide des propriétés <span class="italique">left, right, top</span> et
+      <span class="italique">bottom</span>.
+    </p>
+    <br />
+
+    <p>
+      Si on veut par exemple placer 2 images du logo HTML5 l’une à côté de l’autre, chacune d’une hauteur de 100 pixels, la première de largeur 300
+      pixels et la deuxième de largeur 100 pixels, on peut par exemple saisir les codes suivants :
+    </p>
+    <h4>accueil.html</h4>
+
+    <img src="../Images/Captures/CSS/accueil.html.png" alt="accueil.html" />
+
+    <h4>style.css</h4>
+
+    <img src="../Images/Captures/CSS/style-css.png" alt="style.css" />
+
+    <p>Ces 2 images seront placées à 300 pixels du bord gauche de l’écran et à 100 pixels du bord supérieur ou du bloc précédent s’il y en a un.</p>
+
+    <footer>
+      <!--Bouton de retour-->
+
+      <a class="button" href="#haut_page">Haut de Page</a>
+    </footer>
+  </body>
+</html>

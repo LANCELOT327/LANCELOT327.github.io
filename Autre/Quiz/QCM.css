@@ -1,0 +1,48 @@
+body {
+  background-color: darkred;
+  color: whitesmoke;
+}
+h1 {
+  text-align: center;
+}
+
+form.statique {
+  pointer-events: none;
+}
+
+img.animation:hover {
+  transform: scale(1.1) rotate(-10deg);
+}
+
+img.animation {
+  transition: transform 0.5s;
+}
+
+input.button {
+  cursor: pointer;
+  background-color: rgb(160, 117, 10);
+  border-color: rgb(160, 117, 10);
+  border-radius: 20px;
+  color: whitesmoke;
+  padding: 20px;
+  transition: transform 0.5s;
+}
+
+a.button-correction {
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  background-color: rgb(66, 124, 39);
+  border-color: rgb(66, 124, 39);
+  border-radius: 20px;
+  margin-left: 10px;
+  color: whitesmoke;
+  padding: 20px;
+  transition: transform 0.5s;
+}
+
+input.button:hover,
+a.button-correction:hover {
+  transform: scale(1.1);
+  border-radius: 20px;
+}

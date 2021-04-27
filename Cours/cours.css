@@ -1,0 +1,127 @@
+img.logo_html {
+  position: relative;
+  top: 120px;
+  left: 750px;
+  width: 8%;
+  border: none;
+}
+
+img.logo_css {
+  position: relative;
+  top: 95px;
+  left: 680px;
+  width: 8%;
+  border: none;
+}
+
+img.logo_js {
+  position: relative;
+  top: 100px;
+  left: 750px;
+  width: 9%;
+  border: none;
+}
+
+img {
+  border-color: goldenrod;
+  border-style: solid;
+  border-radius: 10px;
+}
+
+body {
+  background-color: darkred;
+  color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+table {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+td {
+  border-width: 2px;
+  border-style: solid;
+  border-color: white;
+  padding: 20px;
+}
+td.gold {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+p {
+  text-align: justify;
+}
+
+.gras {
+  font-weight: bold;
+}
+
+.italique {
+  font-style: italic;
+}
+
+.grand_titre {
+  text-align: center;
+}
+
+.titres {
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: whitesmoke;
+  transition: color 0.5s;
+}
+
+a:hover {
+  color: lime;
+}
+
+img.animation:hover {
+  transform: scale(1.1) rotate(-10deg);
+}
+
+img.animation {
+  transition: transform 0.5s;
+  border: none;
+}
+
+img.flottant-gauche {
+  float: left;
+  margin-right: 25px;
+}
+
+img.capture_paragraphe {
+  position: relative;
+  left: 130px;
+}
+
+/*Bouton haut de page*/
+
+.button {
+  background-color: forestgreen;
+  border-radius: 20px;
+  color: white;
+  font-weight: bolder;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: relative;
+  left: 1050px;
+  bottom: 5px;
+  transition: transform 0.2s;
+}
+
+.button:hover {
+  border-radius: 20px;
+  transform: scale(1.1);
+  color: white;
+}

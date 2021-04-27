@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="ressources_style.css" />
+    <title>Ressources HTML</title>
+  </head>
+  <body>
+    <header>
+      <a href="../../Accueil/accueil.html">
+        <img class="animation" id="haut_page" src="../../Images/accueil.png" alt="logo_accueil" />
+      </a>
+      <h1 class="grand_titre">Ressources HTML</h1>
+    </header>
+
+    <h2>Les Balises HTML</h2>
+
+    <p>
+      Les balises HTML permettent d'afficher des éléments sur notre page, et de créer la structure minimale de la page. On a donc besoin de les
+      utiliser souvent : c'est pourquoi je vous ai fait un tableau de rappels avec la plupart des balises.
+    </p>
+
+    <table>
+      <tr>
+        <td class="gold">Balises</td>
+        <td class="gold">Utilisations</td>
+        <td class="gold">Exemples</td>
+      </tr>
+      <tr>
+        <td>&lt;p&gt;...&lt;/p&gt;</td>
+        <td>Permet d'afficher un paragraphe</td>
+        <td>&lt;p&gt;ceci est un paragraphe&lt;/p&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;h1&gt;...&lt;/h1&gt; ou &lt;h6&gt;...&lt;/h6&gt;</td>
+        <td class="justifié">
+          Permet d'afficher un titre. Un nombre entier compris entre 1 et 6 est à indiquer après "h" : h1 étant le titre le plus plus important et h6
+          le titre le moins important.
+        </td>
+        <td>&lt;h1&gt;ceci est un titre&lt;/h1&gt;</td>
+      </tr>
+      <tr>
+        <td>&lt;img src="..." alt="..."&gt;</td>
+        <td class="justifié">
+          Permet d'afficher une image. L'emplacement est à renseigner dans src, une description brève est à renseigner dans alt.
+        </td>
+        <td>&lt;img src="../../Images/Logo/image.png" alt="image" /&gt;</td>
+      </tr>
+
+      <tr>
+        <td>&lt;a href="..."&gt;...&lt;/a&gt;</td>
+        <td class="justifié">
+          Permet d'afficher un lien hypertexte. L'URL ou l'emplacement de la page est à renseigner dans href. Le second espace doit contenir l'élément
+          cliquable (mot ; image...)
+        </td>
+        <td>&lt;a href="www.google.com"&gt;Ceci est un lien vers Google&lt;/a&gt;</td>
+      </tr>
+      <tr>
+        <td>
+          &lt;table&gt;...&lt;/table&gt; <br />
+          <br />
+          &lt;tr&gt;...&lt;/tr&gt; <br />
+          <br />
+          &lt;td&gt;...&lt;/td&gt;
+        </td>
+        <td class="justifié">
+          L'élément &lt;table&gt; permet d'afficher un tableau. L'élément HTML &lt;tr&gt; définit une ligne de cellules dans un tableau. Une ligne
+          d'un tableau est composée d'éléments &lt;td&gt;, qui constituent les données des cellules.
+        </td>
+        <td>
+          &lt;table&gt; <br />
+          <br />
+
+          &lt;tr&gt; <br />
+          <br />
+          &lt;td&gt;première cellule de la première ligne&lt;/td&gt;<br />
+          <br />
+          &lt;td&gt;deuxième cellule de la première ligne&lt;/td&gt;
+
+          <br />
+          <br />
+          &lt;/tr&gt;
+
+          <br />
+          <br />
+          &lt;/table&gt;
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

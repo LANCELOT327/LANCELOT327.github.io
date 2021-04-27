@@ -1,0 +1,30 @@
+body {
+  background-color: #5644ca;
+}
+
+body {
+  background-image: url('logoHTML5.png');
+  background-repeat: no-repeat;
+}
+
+table {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #0000ff;
+}
+
+td {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #0000ff;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+span {
+  position: relative;
+  left: 300px;
+  top: 100px;
+}

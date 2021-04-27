@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="cours.css" />
+    <title>Cours HTML</title>
+
+    <a href="../Accueil/accueil.html">
+      <img class="animation" id="haut_page" src="../Images/accueil.png" alt="logo_accueil" />
+    </a>
+  </head>
+
+  <body>
+    <img class="logo_html" src="../Images/Logo/logoHTML5_2.png" alt="logo_html" />
+    <h1 class="grand_titre">Cours HTML</h1>
+
+    <h2 class="grand_titre">PREMIERS PAS EN HTML</h2>
+
+    <h2 class="titres">1. Les prérequis</h2>
+
+    <p>
+      Le développement HTML ne nécessite rien d’autre qu’un éditeur de texte. Le logiciel « bloc-notes » peut suffire mais il est souhaitable
+      d’utiliser un logiciel plus performant comme "notepad++" "Sublime text", "Brakets" ou "Visual Studio Code" . Vous pouvez les télécharger ici :
+    </p>
+
+    <ul>
+      <li>
+        <a target="_blank" href="https://notepad-plus-plus.org">notepad++</a>
+      </li>
+
+      <li><a target="blank" href="https://www.sublimetext.com/">Sublime text</a></li>
+
+      <li>
+        <a target="_blank" href="http://brackets.io">Brakets</a>
+      </li>
+
+      <li>
+        <a target="blank" href="https://code.visualstudio.com"> Visual Studio Code </a>
+      </li>
+    </ul>
+
+    <p>
+      Un navigateur est ensuite nécessaire pour visualiser les pages créées. "Mozilla Firefox", "Google Chrome", ou "Internet explorer" sont des
+      navigateurs, très répandus.
+    </p>
+
+    <h2 class="titres">2. Principe de HTML</h2>
+
+    <p>
+      Pour coder en HTML il faut saisir des balises, en respectant une certaine syntaxe afin que le navigateur comprenne ce que l’on veut afficher.
+      Les balises HTML sont des mots-clés insérés entre les symboles &lt; et &gt;". Par exemple, tout fichier HTML contient la balise &lt;html&gt;. Il
+      existe 2 types de balises, celles qui vont par paire (comme &lt;html&gt;, qui est « fermée » par &lt;/html&gt; ) et celles qui sont orphelines,
+      comme la balise &lt;meta/&gt; que nous verrons plus loin. Avec la convention HTML5, ces balises doivent être écrites en minuscules. On
+      enregistrera le document dans un dossier que l’on nommera avec l’extension .html avec un nom du type page1.html. On choisira d’enregistrer ce
+      fichier dans un dossier que l’on nommera site-internet dans le dossier documents.
+    </p>
+
+    <h2 class="titres">3. Structure minimale d'une page HTML</h2>
+
+    <p>
+      Ouvrir votre éditeur de texte (notepad++ par exemple) <br />
+      et saisir le texte suivant :
+    </p>
+    <img class="flottant-gauche" src="../Images/Captures/HTML/Structure_mini.png" alt="Structure_minimale-html" />
+
+    <p>
+      La première ligne &lt;!doctype html&gt; permet au navigateur de savoir que le fichier est un fichier HTML suivant la norme HTML5. Les 2 balises
+      &lt;html&gt; et &lt;/html&gt; structurent le fichier (sorte de début et de fin de page …) Entre les balises &lt;head&gt; et &lt;/head&gt; on
+      trouve les informations relatives à l’en-tête de la page et entre les balises &lt;body&gt; et &lt;/body&gt; , on trouve les informations
+      relatives au corps de la page. Entre les balises &lt;title&gt; et &lt;/title&gt;, on trouve le titre de la page, qui sera affiché par le
+      navigateur. Enfin dans la balise &lt;meta ... /> on trouve l’information concernant le type d’encodage utilisé, le plus courant étant « utf-8 ».
+    </p>
+    <br />
+    <p>
+      Dans le menu de notepad++, dans encoding, sélectionner utf-8. La balise &lt;meta/&gt; possède ici un attribut, charset, qui spécifie l’encodage.
+      Enregistrer ce fichier avec le nom page1.html dans le dossier site-internet.
+    </p>
+
+    <br />
+    <br />
+
+    <h2 class="titres">4. Premières balises</h2>
+    <p>
+      Modifier le fichier précédent en ajoutant une ligne comme <br />
+      ci-dessous :
+    </p>
+    <img class="flottant-gauche" src="../Images/Captures/HTML/paragraphe.png" alt="balise-paragraphe" />
+    <p>
+      Les balises <span class="gras">&lt;p&gt;</span> et <span class="gras">&lt;/p&gt; </span> (paragraphe) contiennent un texte qui sera visible à
+      l’écran. Enregistrer le fichier, aller dans le dossier site-internet et double-cliquer sur page1.html. Avec Google Chrome par exemple, vous
+      devriez voir ceci à l’écran :
+    </p>
+
+    <img class="capture_paragraphe" src="../Images/Captures/HTML/premier_paragraphe.png" alt="premier_paragraphe-navigateur" />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>
+      Insérer maintenant la balise <span class="gras">&lt;br&gt;</span> entre notre et premier dans le fichier précédent. Enregistrer à nouveau puis
+      actualiser la page web. Observer alors que la balise <span class="gras">&lt;br&gt;</span> (break) a permis un retour à la ligne à l’écran.
+    </p>
+
+    <h2 class="titres">5. Créer des liens</h2>
+
+    <p>
+      Il est nécessaire de savoir créer des liens vers d’autres sites internet ou vers d’autres pages de notre site. Pour cela on utilise les balises
+      et <span class="gras">&lt;a&gt;</span> et <span class="gras">&lt;/a&gt;</span> . Par exemple, pour créer un lien vers le moteur de recherche
+      google, on saisit, après la balise &lt;/p&gt; de notre fichier :
+    </p>
+    <img src="../Images/Captures/HTML/lien_google.png" alt="lien_google" />
+
+    <p>Pour créer un lien vers une autre page de notre site, page2.html par exemple, on saisit :</p>
+    <img src="../Images/Captures/HTML/lien_page-2.png" alt="lien-vers-page_2" />
+
+    <h3>Exemple :</h3>
+
+    <p>1. Ouvrir un nouveau fichier dans votre éditeur de texte et recopier le code suivant : <br /></p>
+    <img class="page-2" src="../Images/Captures/HTML/page-2.png" alt="code-page-2" />
+    <p>
+      2. Enregistrer ce fichier avec le nom page2.html dans le dossier site-internet. <br />
+      3. Ouvrir le fichier page1.html dans le navigateur avec l’ajout du lien vers la page 2 et tester ce lien. <br />
+      4. Ajouter maintenant un lien sur la page 2 vers la page 1. Tester le résultat obtenu.
+    </p>
+
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+
+    <h1 class="grand_titre">Structurer ses pages HTML</h1>
+
+    <p>Il nous faut maintenant apprendre les balises HTML les plus courantes pour pouvoir structurer correctement nos pages.</p>
+
+    <h2 class="titres">1. Formater le texte</h2>
+
+    <h3 class="titres">Les Titres :</h3>
+
+    <p>
+      Les titres sont très importants pour structurer un document. Les balises de titre sont toutes du type
+      <span class="italique">&lt;hx&gt;</span> où <span class="italique">x</span> est un nombre compris entre 1 et 6.
+      <span class="gras">&lt;h1&gt;</span> représente un titre de plus haut niveau que <span class="gras">&lt;h2&gt;</span> , etc … Pour reproduire la
+      structure de ce cours sur une page web, on écrirait :
+    </p>
+
+    <img src="../Images/Captures/HTML/Titres.png" alt="Balises-titres" />
+    <p>et ainsi de suite...</p>
+
+    <h3 class="titres">Les Listes :</h3>
+
+    <p>
+      Une autre façon d’organiser des informations est la création de listes, numérotées ou non. Une liste numérotée est dite ordonnée. La balise
+      correspondante est <span class="gras">&lt;ol&gt; &lt;/ol&gt;</span> . Chacun des éléments de cette liste doit être encapsulé entre les balises
+      <span class="gras">&lt;li&gt; &lt;/li&gt;</span>. On peut apporter des spécifications aux listes via des <span class="gras">attributs</span>.
+      Par exemple :
+    </p>
+
+    <table>
+      <tr>
+        <td class="gold">Attribut</td>
+        <td class="gold">Signification</td>
+      </tr>
+
+      <td>start</td>
+      <td>Précise le numéro de départ</td>
+
+      <tr>
+        <td>reversed</td>
+        <td>La liste est numérotée dans l’ordre décroissant</td>
+      </tr>
+
+      <tr>
+        <td>type</td>
+        <td>Précise le type de numérotation</td>
+      </tr>
+    </table>
+
+    <p>Tester le code suivant :</p>
+
+    <img src="../Images/Captures/HTML/listes.png" alt="code-HTMl_liste-ol" />
+
+    <p>
+      Il est possible de créer des listes à l’intérieur d’une balise <span class="gras">&lt;li&gt; &lt;/li&gt;</span>. Il est également possible de
+      créer des listes à puces (non numérotées) avec la balise <span class="gras">&lt;ul&gt; &lt;/ul&gt;</span>. Chaque élément s’écrit avec la balise
+      <span class="gras">&lt;li&gt;&lt;/li&gt;</span> comme pour les listes ordonnées.
+    </p>
+
+    <h2 class="titres">2. Style et alignement</h2>
+
+    <p>
+      Le style de nos pages sera réalisé à l’aide du langage CSS que l’on verra plus loin. Un peu de patience. On peut toutefois retenir la balise
+      <span class="gras">&lt;center&gt;&lt;/center&gt;</span>. Le texte encapsulé dans ces balises sera évidemment centré sur la page web.
+    </p>
+
+    <h3 class="titres">Images</h3>
+    <p>La balise qui permet d’insérer une image dans une page web est une balise orpheline qui a de nombreux attributs possibles :</p>
+
+    <img src="../Images/Captures/HTML/img_1.png" alt="balise-img_html" />
+
+    <p>
+      L'attribut "<span class="gras">src</span>" doit contenir le chemin menant à l'image cible ainsi que le nom de l'image suivit de son extension
+      (.png / .jpg / .gif).
+    </p>
+    <p>Remarque : si l'image à afficher se trouve dans le même dossier que la page web, il suffit d'indiquer le nom de l'image avec l'extension.</p>
+
+    <p>Si l'image se trouve dans un dossier "Images" au même niveau que la page web, on indiquera le chemin de l'image comme si ci-dessous :</p>
+
+    <img src="../Images/Captures/HTML/img_2.png" alt="balise-img-html" />
+
+    <p>Si l'image se trouve dans un dossier "Images" parent du dossier contenant la page web, on indiquera le chemin de l'image comme ci-dessous :</p>
+
+    <img src="../Images/Captures/HTML/img_3.png" alt="balise-img-html" />
+
+    <p>
+      L'attribut "<span class="gras">alt</span>" doit contenir une brève description de l'image, au cas où une erreur surviendrai cela permettrai au
+      navigateur d'afficher cette description.
+    </p>
+
+    <p>
+      Utiliser la baliser "<span class="gras">img</span>" afin d'afficher le logo HTML5
+      <a href="../Images/Logo/logoHTML5.png" download target="blank">(téléchargeable ici)</a> sur votre page.
+    </p>
+
+    <p>
+      On peut modifier sa taille avec les attributs <span class="gras">width</span> (largeur) et <span class="gras">height</span> (hauteur), dont les
+      unités sont en pixels. Par exemple, pour afficher cette image avec une hauteur de 200 pixels, on saisira :
+    </p>
+    <img src="../Images/Captures/HTML/img_height.png" alt="attribut-height" />
+
+    <p>
+      Il est possible de créer un lien (vers un autre site ou vers une autre page de notre site) en cliquant sur l’image. Pour cela il suffit de
+      saisir (si on veut créer un lien vers la page 2 par exemple) :
+    </p>
+
+    <img src="../Images/Captures/HTML/lien-image.png" alt="lien-image" />
+
+    <h3 class="titres">Les Tableaux</h3>
+
+    <p>
+      Les tableaux ont une structure de base assez simple. Ils se remplissent ligne par ligne et à l’intérieur de chaque ligne, cellule par cellule,
+      de la gauche vers la droite.
+    </p>
+    <p>
+      La balise <span class="gras">&lt;table&gt; &lt;/table&gt;</span> définit un tableau,<span class="gras">&lt;tr&gt;&lt;/tr&gt;</span> (table row)
+      chaque ligne et à l’intérieur des lignes, les cellules sont définies par &lt;td&gt;&lt;/td&gt; (table data). Toute l’esthétique du tableau se
+      fera avec le CSS. Saisir le code suivant et observer l’affichage obtenu :
+    </p>
+
+    <img src="../Images/Captures/HTML/tableau.png" alt="tableau-structure_html" />
+
+    <p>
+      Pour fusionner plusieurs lignes dans une même colonne on utilise l’attribut rowspan. Dans l’exemple précédent si on veut fusionner les 2
+      cellules de la première colonne on saisit :
+    </p>
+    <img src="../Images/Captures/HTML/rowspan.png" alt="tableau-rowspan" />
+
+    <p>
+      Pour fusionner plusieurs colonnes sur une même ligne on utilise l’attribut colspan. Dans l’exemple précédent si on veut fusionner les 2 cellules
+      de la première ligne on saisit :
+    </p>
+
+    <img src="../Images/Captures/HTML/colspan.png" alt="tableau-colspan" />
+
+    <h3 class="titres">Éléments d'une page</h3>
+
+    <p>
+      Des balises permettent de structurer la page en blocs, autrement que les simples titres ou paragraphes. Chaque division de la page, qu’elle
+      concerne un bloc, un menu, le corps, l’entête du site, le pied de page … doit être encapsulé dans un bloc prévu à cet effet de façon à permettre
+      une modification et une organisation simples, et surtout, à gérer efficacement les choses avec le CSS.
+    </p>
+    <ul>
+      <li><span class="gras">La balise &lt;div&gt; &lt;/div&gt; (pour division)</span>, permet de délimiter un bloc de texte assez gros.</li>
+      <li>
+        <span class="gras">La balise &lt;span&gt; &lt;/span&gt;</span> permet d’encapsuler une partie de texte à laquelle on souhaite pouvoir accéder.
+      </li>
+      <li>
+        <span class="gras">La balise &lt;nav&gt; &lt;/nav&gt;</span> permet de délimiter une zone de liens (qui devient très souvent un menu avec le
+        CSS).
+      </li>
+      <li><span class="gras">La balise &lt;header&gt; &lt;/header&gt;</span> délimite la zone d’entête de la page.</li>
+      <li><span class="gras">La balise &lt;header&gt; &lt;/header&gt;</span>x délimite la zone de pied de page.</li>
+    </ul>
+
+    <br />
+    <hr />
+    <br />
+    <h1 class="grand_titre">Créer un Formulaire</h1>
+
+    <p>
+      Pour permettre à l’utilisateur d’entrer des données (et les traiter avec JAVASSRIPT ou PHP) il est nécessaire de créer des formulaires. La
+      balise permettant de créer un formulaire est <span class="gras">&lt;form&gt; &lt;/form&gt;</span>.
+    </p>
+
+    <h2 class="titres">1. Lignes de Saisie</h2>
+
+    <p>
+      La balise orpheline à utiliser est <span class="gras">&lt;input type="text"&gt;</span>. Cette balise génère une case de texte, ayant la forme
+      d’une ligne, dans laquelle l’utilisateur peut saisir n’importe quel texte. Les attributs de cette balise sont :
+    </p>
+
+    <ul>
+      <li><span class="gras">size : </span>permet de donner la taille de la ligne, en nombre de caractères.</li>
+      <li>
+        <span class="gras">placeholder :</span> écrit le texte de l’attribut en grisé dans la case avant que l’utilisateur n’y saisisse quelque chose.
+      </li>
+      <li><span class="gras">required :</span> lorsqu’il est spécifié, empêche le formulaire d’être validé si l’élément n’est pas rempli.</li>
+      <li><span class="gras">value : </span>donne la valeur présente dans la ligne à l’ouverture de la page.</li>
+    </ul>
+
+    <p>Saisir le code suivant et observer l’affichage obtenu dans le navigateur :</p>
+
+    <img src="../Images/Captures/HTML/input.png" alt="formulaire_input" />
+
+    <h2 class="titres">2. Nombres à Saisir</h2>
+
+    <p>
+      La balise orpheline à utiliser est <span class="gras">&lt;input type="number"&gt;</span>. Contrairement à la balise précédente, on ne peut
+      saisir que des nombres. De plus cette ligne est accompagnée de 2 boutons qui permettent d’augmenter ou de diminuer la valeur.
+    </p>
+
+    <p>Outre les attributs name, size, placeholder et required, on peut aussi utiliser les attributs :</p>
+
+    <ul>
+      <li><span class="gras">min :</span> permet de spécifier la valeur minimale.</li>
+      <li><span class="gras">max :</span> qui permet de spécifier la valeur maximale.</li>
+      <li><span class="gras">step :</span> qui permet de spécifier le pas.</li>
+    </ul>
+
+    <p>Dans le fichier précédent, modifier le contenu de la balise <span class="gras">&lt;input /&gt;</span> comme ci-dessous :</p>
+
+    <img src="../Images/Captures/HTML/nbr-saisir.png" alt="nombre-formulaire" />
+
+    <h2 class="titres">3. Mot de Passe</h2>
+
+    <p>
+      Le fonctionnement est le même que celui de la ligne de saisie, à ceci près que des caractères spéciaux (gros points, étoiles, …) masquent la
+      saisie. La balise est <span class="gras">&lt;input type="password"&gt;</span>. Les attributs sont les mêmes que ceux de la ligne de saisie.
+    </p>
+
+    <h2 class="titres">4. Cases à Cocher</h2>
+
+    <p>Que serait un formulaire sans case à cocher ? On l’obtient par :</p>
+
+    <img src="../Images/Captures/HTML/checkbox.png" alt="checkbox-html" />
+
+    <p>La case à cocher peut avoir 2 attributs, en plus de ceux qui sont valables pour toutes les balises des formulaires :</p>
+
+    <ul>
+      <li><span class="gras">checked :</span> permet de générer une case déjà cochée.</li>
+      <li><span class="gras">value :</span> permet de spécifier la valeur retournée lorsque la case est cochée.</li>
+    </ul>
+
+    <h3>Exemple :</h3>
+
+    <img src="../Images/Captures/HTML/exemple_checkbox.png" alt="exemple_checkbox" />
+
+    <h2 class="titres">5. Boutons Radio</h2>
+
+    <p>
+      Les boutons radio sont également des cases à cocher mais ceux-ci sont groupés, et dans ce groupe, une seule case doit être cochée. Pour gérer
+      les groupes de boutons, on attribue la même valeur à l’attribut <span class="italique gras">name</span> de chaque bouton du groupe.
+    </p>
+
+    <p>On retrouve les attributs <span class="gras">checked</span> et <span class="gras">value</span>.</p>
+
+    <p>Pour choisir le sexe d’une personne par exemple, on génère un groupe de 2 boutons comme ci-dessous :</p>
+
+    <img src="../Images/Captures/HTML/boutons_radio.png" alt="choix-sexe_boutons-radio" />
+
+    <h2 class="titres">6. Listes de Sélection</h2>
+
+    <p>Pour créer une liste déroulante, on utilise la balise <span class="gras">&lt;select&gt; &lt;/select&gt;</span>.</p>
+
+    <p>
+      Il est possible de spécifier le nombre de valeurs affichées simultanément à l’écran avec l’attribut <span class="gras">size</span> et de pouvoir
+      choisir plusieurs options avec l’attribut <span class="gras">multiple</span>.
+    </p>
+
+    <p>
+      Chacune des possibilités proposées dans la liste peut être ajoutée par les balises <span class="gras">&lt;option&gt; &lt;/option&gt;</span>.
+    </p>
+
+    <p>
+      L’attribut <span class="gras">value</span> permet d’attribuer une valeur à chaque option de la liste et l’attribut
+      <span class="gras">selected</span> permet de choisir l’option de la liste sélectionnée par défaut.
+    </p>
+
+    <h3>Exemple : le lundi est sélectionné par défaut ...</h3>
+
+    <img src="../Images/Captures/HTML/sélection_jour.png" alt="sélection_jour-semaine" />
+
+    <p>
+      Et voici un autre exemple avec une liste « multi sélection » sur 4 lignes. Il faut appuyer sur la touche CTRL tout en cliquant pour sélectionner
+      plusieurs propositions en même temps...
+    </p>
+
+    <img src="../Images/Captures/HTML/sélection_mois.png" alt="sélection_mois" />
+
+    <h2 class="titres">7. Zone de Texte</h2>
+
+    <p>Si on veut écrire un texte, il faut utiliser la balise <span class="gras">&lt;textarea&gt; &lt;/textarea&gt;</span>.</p>
+    <p>
+      Il est possible de spécifier le nombre de lignes et le nombre de colonnes avec les attributs <span class="gras">cols</span> et
+      <span class="gras">rows</span>. L’attribut <span class="gras">maxlength</span> permet de définir le nombre maximal de caractères de la zone.
+      Enfin on peut écrire du texte qui sera affiché au départ dans la zone à l’ouverture de la page.
+    </p>
+    <h3>Exemple :</h3>
+
+    <img src="../Images/Captures/HTML/textarea.png" alt="textarea-html" />
+
+    <footer>
+      <a class="button" href="#haut_page">Haut de Page</a>
+    </footer>
+  </body>
+</html>

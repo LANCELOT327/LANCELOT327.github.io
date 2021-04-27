@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Identification</title>
+  </head>
+  <body>
+    <h1>Identifiez vous !</h1>
+
+    <form>
+      <input type="text" required placeholder="nom d'utilisateur" id="user" />
+      <br />
+      <input type="password" required placeholder="mot de passe" id="password" />
+      <br />
+      <button type="button" onclick="Identification();">se connecter</button>
+    </form>
+
+    <img class="logo-html" src="Images/Logo/logoHTML5_2.png" alt="logoHTML5" />
+    <img class="logo-css" src="Images/Logo/CSS3_logo2.png" alt="logoCSS" />
+    <img class="logo-js" src="Images/Logo/logo_JS2.png" alt="logoCSS" />
+
+    <script>
+      function Identification() {
+        // Recherche de l'input "user" et "password"
+
+        var user = document.getElementById('user');
+        var mdp = document.getElementById('password');
+
+        // Accès à son contenu  (Value)
+        var utilisateur = user.value;
+        var pass = password.value;
+
+        // comparaison
+        if (utilisateur == 'célian' && pass == 'azerty') {
+          document.location.href = 'Accueil/accueil.html';
+        } else if (utilisateur == '' && pass == '') {
+          alert("Veuillez saisir votre nom d'utilisateur et votre mot de passe.");
+        } else if (utilisateur == '') {
+          alert("Veuillez saisir votre nom d'utilisateur");
+        } else if (pass == '') {
+          alert('Veuillez saisir votre mot de passe');
+        } else {
+          alert("Echec de la connexion : Mot de passe ou/et nom d'utilisateur invalide");
+        }
+      }
+    </script>
+  </body>
+</html>

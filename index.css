@@ -1,0 +1,64 @@
+* {
+  color: white;
+}
+
+body {
+  background-color: navy;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+}
+
+input {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 50px 5px;
+  box-sizing: border-box;
+  border-color: blue;
+  background-color: white;
+  color: blue;
+}
+
+button {
+  cursor: pointer;
+  position: relative;
+  left: 750px;
+  top: -110px;
+  padding: 50px;
+  padding-right: 100px;
+  background-color: red;
+  border-color: red;
+  text-align: center;
+
+  font-weight: bold;
+  font-size: 25px;
+  display: block;
+  width: 43%;
+  height: 100px;
+  line-height: 0px;
+}
+
+img.logo-html {
+  position: relative;
+  top: -50px;
+  width: 25%;
+  float: left;
+}
+
+img.logo-css {
+  position: relative;
+  top: -50px;
+  left: 15%;
+  width: 18%;
+  float: left;
+}
+
+img.logo-js {
+  position: relative;
+  top: -70px;
+  right: -455px;
+  width: 21%;
+  float: left;
+}
